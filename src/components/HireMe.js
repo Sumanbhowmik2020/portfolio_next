@@ -13,6 +13,12 @@ const HireMe = () => {
                 items-center
                 justify-center
                 overflow-hidden
+                md:right-8
+                md:left-auto
+                md:top-0
+                md:bottom-auto
+                md:absolute
+                sm:right-0
             '
         >
             <div
@@ -23,10 +29,11 @@ const HireMe = () => {
                     items-center
                     justify-center
                     relative
+                    md:w-24
                 '
             >
                 <CircularText
-                    className={"fill-dark animate-spin-slow"}
+                    className={"fill-dark animate-spin-slow dark:fill-light"}
                 />
                 <Link
                     href="mailto:abcd@gmail.com"
@@ -51,6 +58,14 @@ const HireMe = () => {
                         font-semibold
                         hover:bg-light
                         hover:text-dark
+                        dark:bg-light
+                        dark:text-dark
+                        hover:dark:bg-dark
+                        hover:dark:text-light
+                        hover:dark:border-light
+                        md:w-12
+                        md:h-12
+                        md:text-[10px]
                     '
                 >
                     Hire Me

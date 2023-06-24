@@ -39,6 +39,7 @@ const AnimatedText = ({text,className=""}) => {
                 justify-center 
                 text-center
                 overflow-hidden
+                sm:py-0
                 '
         >
             <motion.h1
@@ -48,7 +49,8 @@ const AnimatedText = ({text,className=""}) => {
                     text-dark 
                     font-bold 
                     capitalize 
-                    text-8xl  
+                    text-8xl
+                    dark:text-light  
                     ${className}
                 `}
                 variants={quote}
